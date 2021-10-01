@@ -10,7 +10,7 @@ for(i=0;i<n;i++)
 scanf("%d",&a[i]);
 }
 printf("double of every element\n");
-for(i=n; i<n; i++)
+for(i=0; i<n; i++)
 {
 printf("%d\n",a[i]*2);
 }
