@@ -1,26 +1,28 @@
 #include <stdio.h>
 void main()
 {
-	int n,r,d,N;
-	printf("Enter the Digit ");
-	scanf("%d",&n);
-	N=n;
-	d=0;
-	while(n>0)
+	printf("CALCULATOR \n");
+	float a,b,c;
+	int x;
+	printf("Enter the Numbers \n");
+	scanf("%f %f",&a,&b);
+	printf(" enter sum=1,subtract=2, division =3, multiplication=4 \n");
+	scanf("%d",&x);
+	switch(x)
 	{
-		r=n%10;
-		d=(r*r*r)+d;
-		n=n/10;
-		
-		}
-		if(d==N){
-						printf("%d is ARMSTRONG NUMBER",N);
-	}else{
-		printf("%d is not ARMSTRONG NUMBER",N);
-		}
-	
+		case 1:c=a+b;
+		printf("answer = %f",c);
+		break;
+		case 2:c=a-b;
+		printf("answer = %f",c);
+		break;
+		case 4:c=a*b;
+		printf("answer = %f",c);
+		break;
+		case 3:c=a/b;
+		printf("answer = %f",c);
+		break;
+		default:printf("invalid number");
+	}
 	
 	}
-
-
-	
